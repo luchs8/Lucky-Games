@@ -96,14 +96,26 @@ nav {
   list-style: none;
   margin: 0;
   padding: 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 .submenu li {
   padding: 0.5rem 1rem;
 }
 
+.submenu li a {
+  color: #fff !important;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
 .submenu li:hover {
   background-color: #1f2937;
+}
+
+.submenu li a:hover {
+  color: var(--accent-color) !important;
 }
 
 .position-relative:hover .submenu {
@@ -123,6 +135,7 @@ nav {
 }
 
 
+/* Carousel */
 .carousel {
   position: relative;
   height: 85vh;
@@ -182,6 +195,7 @@ nav {
 }
 
 
+/* Featured Games */
 .featured-section {
   padding: 3rem 1rem;
   text-align: center;
@@ -239,6 +253,7 @@ footer {
 }
 
 
+/* WhatsApp Button */
 #whatsapp-btn {
   position: fixed;
   bottom: 20px;
@@ -268,6 +283,7 @@ footer {
 }
 
 
+/* Responsive */
 @media (max-width: 768px) {
   .menu-desktop {
     display: none;
