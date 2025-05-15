@@ -125,17 +125,36 @@ nav {
 
 .menu-mobile {
   display: none;
-  flex-direction: column;
+  flex-direction: row;
+  overflow-x: auto;
   gap: 1rem;
+  padding: 0.5rem 0;
+  background-color: #111827;
+  scrollbar-width: thin;
+  -ms-overflow-style: none;
+}
+
+.menu-mobile::-webkit-scrollbar {
+  display: none;
+}
+
+.menu-mobile a {
+  white-space: nowrap;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  color: var(--text-color);
 }
 
 .menu-toggle {
-  display: none;
+  display: block;
+  font-size: 1.5rem;
   cursor: pointer;
 }
 
+.menu-mobile.open {
+  display: flex;
+}
 
-/* Carousel */
 .carousel {
   position: relative;
   height: 85vh;
@@ -194,8 +213,6 @@ nav {
   background: rgba(0, 0, 0, 0.8);
 }
 
-
-/* Featured Games */
 .featured-section {
   padding: 3rem 1rem;
   text-align: center;
@@ -252,14 +269,11 @@ footer {
   color: #aaa;
 }
 
-
-/* WhatsApp Button */
 #whatsapp-btn {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: var(--accent-color);
-  color: white;
+  background-color: #ffffff;
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -272,6 +286,17 @@ footer {
   animation: bounce 2s infinite;
 }
 
+#whatsapp-btn img {
+  width: 80px;
+  height: 80px;
+  transition: transform 0.3s ease;
+  filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.3));
+}
+
+#whatsapp-btn:hover img {
+  transform: scale(1.1);
+}
+
 #whatsapp-btn.hide {
   opacity: 0;
   transform: scale(0);
@@ -282,35 +307,37 @@ footer {
   50% { transform: translateY(-10px); }
 }
 
-
-/* Responsive */
 @media (max-width: 768px) {
   .menu-desktop {
     display: none;
   }
 
   .menu-mobile {
-    display: flex;
+    display: none;
     flex-direction: row;
+    overflow-x: auto;
     gap: 1rem;
-    padding: 1rem 0;
+    background-color: #111827;
+    padding: 0.5rem 0;
+    scrollbar-width: thin;
+    -ms-overflow-style: none;
   }
 
-  .menu-toggle {
-    display: block;
+  .menu-mobile::-webkit-scrollbar {
+    display: none;
   }
 
-  .submenu {
-    position: static;
-    background: transparent;
-    opacity: 1;
-    visibility: visible;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
+  .menu-mobile a {
+    white-space: nowrap;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
   }
 
-  .submenu li {
-    padding: 0;
+  .position-relative .submenu {
+    display: none;
+  }
+
+  .menu-mobile .submenu {
+    display: none;
   }
 }

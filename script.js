@@ -19,7 +19,6 @@ function prevSlide() {
 
 setInterval(nextSlide, 5000);
 
-
 window.addEventListener('scroll', () => {
   const btn = document.getElementById('whatsapp-btn');
   if (window.scrollY > 300) {
@@ -28,7 +27,6 @@ window.addEventListener('scroll', () => {
     btn.classList.add('hide');
   }
 });
-
 
 const menuToggle = document.getElementById('menu-toggle');
 const mobileMenu = document.getElementById('mobile-menu');
