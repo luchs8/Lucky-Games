@@ -1,0 +1,300 @@
+:root {
+  --bg-color: #1f2937;
+  --text-color: #fff;
+  --accent-color: #10b981;
+  --hover-bg: #374151;
+  --shadow-color: rgba(0, 0, 0, 0.5);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+header {
+  background-color: #111827;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 6px var(--shadow-color);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--accent-color);
+}
+
+.menu-desktop {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  height: 60px;
+}
+
+.menu-desktop > a,
+.menu-desktop > .position-relative {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.menu-desktop > a:hover,
+.menu-desktop > .position-relative:hover {
+  color: var(--accent-color);
+}
+
+.position-relative {
+  position: relative;
+  cursor: pointer;
+}
+
+.menu-link {
+  display: block;
+  padding: 0 0.5rem;
+  line-height: 60px;
+  cursor: pointer;
+}
+
+.submenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 140px;
+  background-color: var(--hover-bg);
+  border-radius: 4px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 999;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.submenu li {
+  padding: 0.5rem 1rem;
+}
+
+.submenu li:hover {
+  background-color: #1f2937;
+}
+
+.position-relative:hover .submenu {
+  opacity: 1;
+  visibility: visible;
+}
+
+.menu-mobile {
+  display: none;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+/* Carousel */
+.carousel {
+  position: relative;
+  height: 85vh;
+  overflow: hidden;
+}
+
+.carousel-item {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.carousel-item.active {
+  opacity: 1;
+}
+
+.carousel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 1rem 2rem;
+  border-radius: 8px;
+}
+
+.carousel-controls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.carousel-controls button {
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.carousel-controls button:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* Featured Games */
+.featured-section {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.games-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.game-card {
+  background-color: var(--hover-bg);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.game-card:hover {
+  transform: translateY(-10px);
+}
+
+.game-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.game-info {
+  padding: 1rem;
+}
+
+.game-info h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.game-info p {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-bottom: 0.5rem;
+}
+
+.price {
+  color: var(--accent-color);
+  font-weight: bold;
+}
+
+footer {
+  background-color: #111827;
+  padding: 1rem;
+  text-align: center;
+  color: #aaa;
+}
+
+/* WhatsApp Button */
+#whatsapp-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--accent-color);
+  color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  z-index: 1000;
+  animation: bounce 2s infinite;
+}
+
+#whatsapp-btn.hide {
+  opacity: 0;
+  transform: scale(0);
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .menu-desktop {
+    display: none;
+  }
+
+  .menu-mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 0;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .submenu {
+    position: static;
+    background: transparent;
+    opacity: 1;
+    visibility: visible;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .submenu li {
+    padding: 0;
+  }
+}
