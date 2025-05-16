@@ -1,3 +1,4 @@
+
 const slides = document.querySelectorAll('.carousel-item');
 let currentSlide = 0;
 
@@ -17,7 +18,7 @@ function prevSlide() {
   showSlide(currentSlide);
 }
 
-setInterval(nextSlide, 5000);
+setInterval(nextSlide, 5000); 
 
 window.addEventListener('scroll', () => {
   const btn = document.getElementById('whatsapp-btn');
@@ -28,9 +29,17 @@ window.addEventListener('scroll', () => {
   }
 });
 
+
 const menuToggle = document.getElementById('menu-toggle');
 const mobileMenu = document.getElementById('mobile-menu');
 
 menuToggle.addEventListener('click', () => {
   mobileMenu.classList.toggle('open');
+});
+
+
+document.querySelectorAll('.menu-mobile a').forEach(link => {
+  link.addEventListener('click', () => {
+    mobileMenu.classList.remove('open');
+  });
 });
