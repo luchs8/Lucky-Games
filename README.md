@@ -1,6 +1,6 @@
 # LuckyGames
 
-Esse projeto foi desenvolvido com o objetivo de treinar minhas habilidades em **HTML**, **CSS** e **JavaScript puro**.
+Esse projeto foi desenvolvido com o objetivo de treinar minhas habilidades em **HTML**, **CSS** e **JavaScript**.
 
 É uma landing page fictícia para uma loja de jogos chamada **LuckyGames**, com as seguintes funcionalidades:
 - Design responsivo moderno
