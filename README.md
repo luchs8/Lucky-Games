@@ -18,7 +18,7 @@
 <br>
 <br>
 
-<img src="https://github.com/luchs8/mario/blob/main/img/MarioDesktop.png" />
+<img src="https://github.com/luchs8/Lucky-Games/blob/main/img/LuckygamesDesktop.png" />
 <br>
 <br>
-<img src="https://github.com/luchs8/mario/blob/main/img/MarioMobile.png"/>
+<img src="https://github.com/luchs8/Lucky-Games/blob/main/img/LuckyGamesMobile.png"/>
