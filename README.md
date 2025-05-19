@@ -21,4 +21,4 @@
 <img src="https://github.com/luchs8/Lucky-Games/blob/main/img/LuckygamesDesktop.png" />
 <br>
 <br>
-<img src="https://github.com/luchs8/Lucky-Games/blob/main/img/LuckyGamesMobile.png"/>
+<img src="https://github.com/luchs8/Lucky-Games/blob/main/img/LuckyGamesMobile2.png"/>
