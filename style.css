@@ -20,7 +20,7 @@ body {
   scroll-behavior: smooth;
 }
 
-/* === Logo Imagem - Pequeno + Wobble no Hover === */
+
 .logo-wrapper {
   display: flex;
   align-items: center;
@@ -214,7 +214,7 @@ nav {
   transform: translate(-50%, -50%);
   text-align: center;
   background: rgba(0, 0, 0, 0.6);
-  padding: 1rem 2rem;
+  padding:-1rem 4rem;
   border-radius: 8px;
 }
 
