@@ -287,7 +287,7 @@ footer {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: #25D366;
+  background-color: #ffffff;
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -301,8 +301,8 @@ footer {
 }
 
 #whatsapp-btn img {
-  width: 32px;
-  height: 32px;
+  width: 80px;
+  height: 80px;
   transition: transform 0.3s ease;
   filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.3));
 }
