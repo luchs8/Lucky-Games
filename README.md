@@ -22,7 +22,7 @@ Esse projeto foi desenvolvido com o objetivo de treinar minhas habilidades em **
 
 ### Desktop
 
-![LuckyGames - Versão Desktop](https://github.com/luchs8/Lucky-Games/blob/main/img/LuckygamesDesktop.png )
+![LuckyGames - Versão Desktop](https://raw.githubusercontent.com/luchs8/Lucky-Games/main/img/LuckygamesDesktop.png )
 
 ### Mobile
 
