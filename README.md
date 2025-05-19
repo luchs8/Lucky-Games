@@ -26,4 +26,4 @@ Esse projeto foi desenvolvido com o objetivo de treinar minhas habilidades em **
 
 ### Mobile
 
-![LuckyGames - Versão Mobile](https://raw.githubusercontent.com/luchs8/Lucky-Games/main/img/LuckyGamesMobile2.png?v=1)
+![LuckyGames - Versão Mobile](https://raw.githubusercontent.com/luchs8/Lucky-Games/main/img/LuckyGamesMobile2.png?v=1 )
